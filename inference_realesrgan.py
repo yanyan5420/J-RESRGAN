@@ -77,17 +77,16 @@ def main():
         netscale = 4
         file_url = ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth']
     # add my retrained model:
-    elif args.model_name in ['RealESRGAN_x2plus', 'r23_net_g_45000','r23_net_g_40000', 
-                             'JRESRGAN_x2plus',
-                             ]:  # x2 RRDBNet model
+    elif args.model_name in ['RealESRGAN_x2plus', 
+                             'r23_net_g_45000','r23_net_g_40000']:  # x2 RRDBNet model
         model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=2)
         netscale = 2
         file_url = ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth']
 
-    # elif args.model_name in r10_retrained_models:
-    #     model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=2)
-    #     netscale = 2
-    #     file_url = ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth']
+    elif args.model_name == "JRESRGAN_x2plus":
+        model = RRDBNet(num_in_ch=3, num_out_ch=3, num_feat=64, num_block=23, num_grow_ch=32, scale=2)
+        netscale = 2
+        file_url = ["https://github.com/yanyan5420/Real-ESRGAN/releases/download/v1.0.0/JRESRGAN_x2plus.pth"] 
 
     elif args.model_name == 'realesr-animevideov3':  # x4 VGG-style model (XS size)
         model = SRVGGNetCompact(num_in_ch=3, num_out_ch=3, num_feat=64, num_conv=16, upscale=4, act_type='prelu')
