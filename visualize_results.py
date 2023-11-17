@@ -13,9 +13,7 @@ parser.add_argument('-l', '--lr', type=str, default='upload', help='Input LR spe
 parser.add_argument('-s', '--sr', type=str, default='results', help="Output SR spectrum")
 args = parser.parse_args()
 
-
-# Sample data for the heatmap
-data = args.sr
+data = cv2.imread(args.sr, cv2.IMREAD_UNCHANGED)
 
 # Create a Dash app
 app = dash.Dash(__name__)
