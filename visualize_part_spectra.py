@@ -9,7 +9,7 @@ from plotly.subplots import make_subplots
 
 
 def plot_part_region_spectrum(img_i, img_o, colorbar_min, colorbar_max):
-    
+
     img_i = np.array(img_i)
     img_i = img_i / np.max(img_i)
 
