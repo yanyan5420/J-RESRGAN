@@ -12,8 +12,8 @@ This is a fork of https://github.com/xinntao/Real-ESRGAN with some **modificatio
 1. Clone repo
 
     ```bash
-    git clone https://github.com/yanyan5420/Real-ESRGAN.git
-    cd Real-ESRGAN
+    git clone https://github.com/yanyan5420/J-RESRGAN.git
+    cd J-RESRGAN
     ```
 
 2. Install dependent packages
@@ -27,10 +27,10 @@ This is a fork of https://github.com/xinntao/Real-ESRGAN with some **modificatio
     ```
 
 ### Inference J-Res Spectra
-1. Download pre-trained model: [JRESRGAN_x2plus.pth](https://github.com/yanyan5420/Real-ESRGAN/releases/download/v1.0.0/JRESRGAN_x2plus.pth) 
+1. Download pre-trained model: [JRESRGAN_x2plus.pth](https://github.com/yanyan5420/J-RESRGAN/releases/download/v1.0.0/JRESRGAN_x2plus.pth) 
 
 ```bash
-wget https://github.com/yanyan5420/Real-ESRGAN/releases/download/v1.0.0/JRESRGAN_x2plus.pth -P weights
+wget https://github.com/yanyan5420/J-RESRGAN/releases/download/v1.0.0/JRESRGAN_x2plus.pth -P weights
 ```
 
 2. Inference:
